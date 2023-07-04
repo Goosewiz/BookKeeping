@@ -2,7 +2,6 @@ package com.example.demo.Model;
 
 import java.text.DateFormat;
 import java.util.Date;
-
 public class Payments {
     private String category;
     private double payment;
