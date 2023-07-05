@@ -5,6 +5,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 @Entity
@@ -14,7 +15,7 @@ public class DBPayments {
     private Long id;
     private String name;
     private double price;
-    private Date date;
+    private LocalDate date;
 
     public Long getId() {
         return id;
@@ -40,18 +41,18 @@ public class DBPayments {
         this.price = price;
     }
 
-    public Date getDate() {
+    public LocalDate getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(LocalDate date) {
         this.date = date;
     }
 
     public DBPayments() {
     }
 
-    public DBPayments(String name, double price, Date date) {
+    public DBPayments(String name, double price, LocalDate date) {
         this.name = name;
         this.price = price;
         this.date = date;
